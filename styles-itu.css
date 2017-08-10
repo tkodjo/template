@@ -1009,7 +1009,7 @@ body.stretched #header.full-header .container {
 	font-size: 36px;
 	line-height: 100%;
 	margin-right: 40px;
-	margin-left: -260px;
+	/*margin-left: -260px;*/
 }
 
 #header.full-header #logo {
@@ -3325,7 +3325,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 
 #page-title {
 	position: relative;
-	padding: 50px 0;
+	padding: 10px 0;
 	background-color: #F5F5F5;
 	border-bottom: 1px solid #EEE;
 }
@@ -13623,5 +13623,6 @@ body:not(.no-transition) #wrapper,
 /** css by kodjo ****/
 
 #top-bar {
-    background-color: #F9F9F9;
+    /*background-color: #F9F9F9;*/
+	background-color:none;
 }
