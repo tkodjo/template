@@ -7490,6 +7490,15 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box .fbox-icon {
 	display: block;
 	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	left: 0;
+}
+
+.feature-box2 .fbox-icon2 {
+	display: block;
+	position: absolute;
 	width: 64px;
 	height: 64px;
 	top: 0;
@@ -7623,13 +7632,26 @@ body:not(.device-touch) .button.button-full strong {
 /* Feature Box - Border
 -----------------------------------------------------------------*/
 
+
 .feature-box.fbox-border .fbox-icon {
+	/*border: 1px solid #0374BC;*/
+	border-radius: 50%;
+}
+
+.feature-box.fbox-border .fbox-icon2 {
 	border: 1px solid #0374BC;
 	border-radius: 50%;
 }
 
 .feature-box.fbox-border .fbox-icon i,
 .feature-box.fbox-border .fbox-icon img {
+	border: none;
+	background-color: transparent !important;
+	color: #0374BC;
+}
+
+.feature-box.fbox-border .fbox-icon2 i,
+.feature-box.fbox-border .fbox-icon2 img {
 	border: none;
 	background-color: transparent !important;
 	color: #0374BC;
@@ -7734,6 +7756,13 @@ body:not(.device-touch) .button.button-full strong {
 	margin: 0 auto 30px;
 }
 
+.feature-box2.fbox-center2 .fbox-icon2 {
+	position: relative;
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 30px;
+}
+
 .feature-box.fbox-center .fbox-icon i {
 	font-size: 42px;
 	line-height: 96px;
@@ -7787,6 +7816,11 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box.fbox-center.fbox-small .fbox-icon {
 	width: 64px;
 	height: 64px;
+}
+
+.feature-box.fbox-center.fbox-small2 .fbox-icon2 {
+	width: 80px;
+	height: 80px;
 }
 
 .feature-box.fbox-center.fbox-small .fbox-icon i {
@@ -13653,9 +13687,45 @@ body:not(.no-transition) #wrapper,
    vertical-align: middle;
 }
 
+.icon-register3:before {
+	content: "";
+    background: url("assets/Untitled-2-03.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+.icon-credential:before {
+	content: "";
+    background: url("assets/Untitled-2-02.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
 .icon-travel:before {
 	content: "";
     background: url("assets/icon-travel.fw.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+.icon-travel2:before {
+	content: "";
+    background: url("assets/Untitled-2-04.png") no-repeat 0 0;
     width: 100%;
     height: 100%;
     background-size:100%;
@@ -13677,9 +13747,34 @@ body:not(.no-transition) #wrapper,
    vertical-align: middle;
 }
 
+.icon-doc-travel2:before {
+	content: "";
+    background: url("assets/Untitled-2-05.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
 .icon-candidates:before {
 	content: "";
     background: url("assets/icon-candidates.fw.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+
+.icon-candidates2:before {
+	content: "";
+    background: url("assets/Untitled-2-06.png") no-repeat 0 0;
     width: 100%;
     height: 100%;
     background-size:100%;
@@ -13700,6 +13795,19 @@ body:not(.no-transition) #wrapper,
    padding-right: 3px;
    vertical-align: middle;
 }
+
+.icon-slot-policy2:before {
+	content: "";
+    background: url("assets/Untitled-2-07.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
 
 .icon-documents-pp:before {
 	content: "";
@@ -13836,3 +13944,16 @@ timeline-pp {
     left:0;
 	border-radius:3px;
 }
+
+.bar-pp2 {
+    height:4px;
+    background:#fff;
+    width:100%;
+    position:relative;
+    top:60px;
+    left:0;
+	border-radius:3px;
+}
+.underline-on-hover:hover {
+  		font-size: 120%;
+	}
