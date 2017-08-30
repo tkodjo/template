@@ -1204,14 +1204,14 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content { display: block; 
 #primary-menu ul ul li:first-child { border-top: 0; }
 
 #primary-menu ul ul li > a {
-	font-size: 12px;
-	font-weight: 600;
-	color: #666;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: 0;
-	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
+	font-size: 11px;
+    font-weight: 600;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    letter-spacing: 0;
+    font-family: montserrat,arial;
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
@@ -3335,14 +3335,14 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 #page-title .container { position: relative; }
 
 #page-title h1 {
-	padding: 0;
+	padding: 20px;
 	margin: 0;
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: #333;
 	font-size: 28px;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 #page-title span {
@@ -3516,7 +3516,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	background-color: #FFF;
 }
 
-#content p { line-height: 1.8; }
+#content p { line-height: 1.8;font-size: 18px;    font-family: montserrat; }
 
 .content-wrap {
 	position: relative;
@@ -11009,14 +11009,14 @@ fieldset[disabled] .sm-form-control {
 
 label {
 	display: inline-block;
-	font-size: 13px;
-	font-weight: 700;
-	font-family: 'montserrat', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: #555;
-	margin-bottom: 10px;
-	cursor: pointer;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'montserrat', sans-serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 label.label-muted {
@@ -13821,9 +13821,34 @@ body:not(.no-transition) #wrapper,
    vertical-align: middle;
 }
 
+.icon-documents-pp2:before {
+	content: "";
+    background: url("assets/Untitled-2-08.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+
 .icon-elections-pp:before {
 	content: "";
     background: url("assets/icon-elections-pp.fw.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+.icon-elections-pp2:before {
+	content: "";
+    background: url("assets/Untitled-2-09.png") no-repeat 0 0;
     width: 100%;
     height: 100%;
     background-size:100%;
@@ -13845,9 +13870,33 @@ body:not(.no-transition) #wrapper,
    vertical-align: middle;
 }
 
+.icon-agenda-pp2:before {
+	content: "";
+    background: url("assets/Untitled-2-10.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
 .icon-news-pp:before {
 	content: "";
     background: url("assets/icon-news-pp.fw.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
+.icon-news-pp2:before {
+	content: "";
+    background: url("assets/Untitled-2-11.png") no-repeat 0 0;
     width: 100%;
     height: 100%;
     background-size:100%;
@@ -13869,6 +13918,18 @@ body:not(.no-transition) #wrapper,
    vertical-align: middle;
 }
 
+.icon-webcast-pp2:before {
+	content: "";
+    background: url("assets/Untitled-2-12.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+
 .icon-speeches-pp:before {
 	content: "";
     background: url("assets/icon-speeches-pp.fw.png") no-repeat 0 0;
@@ -13881,6 +13942,18 @@ body:not(.no-transition) #wrapper,
    vertical-align: middle;
 }
 
+
+.icon-speeches-pp2:before {
+	content: "";
+    background: url("assets/Untitled-2-13.png") no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+    background-size:100%;
+	background-position: center top;
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
 #primary-menu-trigger{
 	z-index:1001 !important;
 }
@@ -13957,3 +14030,18 @@ timeline-pp {
 .underline-on-hover:hover {
   		font-size: 120%;
 	}
+	
+#sync1 {
+  .item {
+    background: #0c83e7;
+    padding: 80px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+	width:200px;
+  }
+}
+

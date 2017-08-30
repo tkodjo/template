@@ -8,7 +8,7 @@
 	
 	<!-- Stylesheets
 	============================================= -->
-		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Montserrat:400,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Montserrat:400,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 	<link rel="stylesheet" href="styles-itu.css" type="text/css">
 	<link rel="stylesheet" href="css/swiper.css" type="text/css">
@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	<link rel="stylesheet" href="responsive-transformations.css" type="text/css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Document Title
@@ -35,22 +37,15 @@
 	<div class="container clearfix">
 		<div class="col_full fright col_last nobottommargin" style="z-index:1000; text-align:right">
 
-					<div style="margin-right:120px" class="visible-lg">
-					<a href="javascript:alert('قريبا ...');" style="cursor:pointer"  class="mainlevel-nav" title="عربي">عربي</a> |
-						<a href="javascript:alert('Página web en construcción');" style="cursor:pointer" title="Español">Español</a> |
-						<a target="" href="javascript:alert('快来了');" style="cursor:pointer"  onclick="#" class="mainlevel-nav" title="中文">中文</a> |
-						<a href="#" title="Français" style="cursor:pointer" >Français</a> |
-						<a style="cursor:pointer"  href="javascript:alert('Сайт находится в разработке');" onclick="window.location.href=&quot;&quot;;" title="Русский">Русский</a> 
+					<div style="margin-right:120px" id="languagebar-div">
+					<a id="languagebar-ar" href="javascript:alert('قريبا ...');" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  class="mainlevel-nav" title="عربي">عربي</a> |
+						<a id="languagebar-es" href="javascript:alert('Página web en construcción');" style="cursor:pointer;margin-left: 10px; margin-right:10px;" title="Español">Español</a> |
+						<a id="languagebar-cn" target="" href="javascript:alert('快来了');" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  onclick="#" class="mainlevel-nav" title="中文">中文</a> |
+						<a id="languagebar-fr" href="#" title="Français" style="cursor:pointer;margin-left: 10px; margin-right:10px;" >Français</a> |
+						<a id="languagebar-ru" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  href="javascript:alert('Сайт находится в разработке');" onclick="window.location.href=&quot;&quot;;" title="Русский">Русский</a> 
                         
 					</div>
-					<div style="" class="hidden-lg">
-					<a href="javascript:alert('قريبا ...');" style="cursor:pointer"  class="mainlevel-nav" title="عربي">عربي</a> |
-						<a href="javascript:alert('Página web en construcción');" style="cursor:pointer" title="Español">Español</a> |
-						<a target="" href="javascript:alert('快来了');" style="cursor:pointer"  onclick="#" class="mainlevel-nav" title="中文">中文</a> |
-						<a href="#" title="Français" style="cursor:pointer" >Français</a> |
-						<a style="cursor:pointer"  href="javascript:alert('Сайт находится в разработке');" onclick="window.location.href=&quot;&quot;;" title="Русский">Русский</a> 
-                        
-					</div>
+					
 
 		</div>
 		</div>
@@ -73,13 +68,28 @@
 			<!-- Logo
 				============================================= -->
 				<div id="logo" class="" style="z-index:1000; top:-10px;">
-					<a href="index.php" onclick="alert('je');" class="standard-logo shining" data-dark-logo="assets/logo/logo-itu-new2.fw.png"  style="font-size: 25px;    text-align: center;    color: #0374BC;    font-weight: bold;" ><img class="divcenter" src="assets/logo/logo-itu-new2.fw.png" alt="ITU Logo"></a>
-					<a href="index.php" class="retina-logo" data-dark-logo="assets/logo/logo-itu-new2.fw.png"><img class="divcenter" src="assets/logo/logo-itu-new2.fw.png" alt="ITU Logo"></a>
+					<a href="pp2018-before7.html" onclick="" class="standard-logo shining" data-dark-logo="assets/logo/logo-itu-new2.fw.png"  style="font-size: 25px;    text-align: center;    color: #0374BC;    font-weight: bold;" ><img class="divcenter" src="assets/logo/logo-itu-new2.fw.png" alt="ITU Logo"></a>
+					<a href="pp2018-before7.html" class="retina-logo" data-dark-logo="assets/logo/logo-itu-new2.fw.png"><img class="divcenter" src="assets/logo/logo-itu-new2.fw.png" alt="ITU Logo"></a>
 				</div><!-- #logo end -->
 					
 
 				<!-- Primary Navigation
 				============================================= -->
+					<style type="text/css">
+				#primary-menu ul li > a {
+					font-weight: bolder;
+					font-size: 13px;
+					padding-left:8px;
+					padding-right:8px;
+					
+					
+				}
+				
+				#primary-menu.style-2 > div > ul > li > a {
+				padding-bottom: 1px;
+				}
+				
+				</style>
 				<nav id="primary-menu" class="with-arrows style-2" style="  border: none;  background-color:white;  ">
 
 					<div class="container clearfix">
@@ -111,7 +121,7 @@
 								
 								</ul>
 							</li>
-							<li class="sub-menu"><a href="#" class="sf-with-ul"><div>Prepare</div></a>
+							<li class="sub-menu"><a href="pp2018-prepare.html" class="sf-with-ul"><div>Prepare</div></a>
 							    <ul style="display: none;">
 									<li class="sub-menu"><a href="#" class="sf-with-ul"><div>Invitations</div></a>
 									
@@ -203,14 +213,15 @@
 						
 						</ul>
 
-						<!-- Top Search
-						============================================= -->
-						<div id="top-search">
-							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-							<form action="search.html" method="get">
-								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
-							</form>
-						</div><!-- #top-search end -->
+							<!-- Top Search
+							============================================= -->
+							<div id="top-search">
+								
+								<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+								<form action="search.html" id="top-search-form"  method="get">
+									<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+								</form>
+							</div><!-- #top-search end -->
 
 					</div>
 
@@ -235,16 +246,16 @@
 							
 							
 						<div class="heading-block nobottommargin center">
-							<h1 class="visible-lg" data-caption-animate="fadeInLeft" style="font-size:50px;font-weight:bold; ">
+							<h1 class="visible-lg" data-caption-animate="fadeInLeft" style="font-size:50px;font-weight:bold; text-transform:none;">
 								<span class="text-rotater nocolor"  data-separator="|" data-rotate="flipInX" data-speed="3500">
 										ITU Plenipotentiary Conference 2018 <br/>
 										 <span class="t-rotate">29 Oct. - 16 Nov. 2018|Dubai, UAE</span>
 								</span>
 							</h1>
-							<h2 class="hidden-lg" data-caption-animate="fadeInLeft" style="">
+							<h2 class="hidden-lg" data-caption-animate="fadeInLeft" style="text-transform:none;">
 								<span class="text-rotater nocolor"  data-separator="|" data-rotate="flipInX" data-speed="3500">
 										ITU Plenipotentiary Conference 2018 <br/>
-										 <span class="t-rotate">25-27 June 2018|Dubai, UAE</span>
+										 <span class="t-rotate">29 Oct. - 16 Nov. 2018|Dubai, UAE</span>
 								</span>
 							</h2>
 							<span class="hidden-xs" style="color:white;">The Plenipotentiary Conference is the top policy-making body of the ITU that decides the 4-year roadmap of the organization .</span>
@@ -259,14 +270,14 @@
 							
 							
 						<div class="heading-block nobottommargin center">
-							<h1 class="visible-lg" data-caption-animate="fadeInLeft" style="font-size:50px;font-weight:bold; ">
+							<h1 class="visible-lg" data-caption-animate="fadeInLeft" style="font-size:50px;font-weight:bold;text-transform:none; ">
 								<span class="text-rotater nocolor"  data-separator="|" data-rotate="flipInX" data-speed="3500">
-										AT the Dubai World Trade Center
+										At the Dubai World Trade Center
 								</span>
 							</h1>
-							<h2 class="hidden-lg" data-caption-animate="fadeInLeft" style="">
+							<h2 class="hidden-lg" data-caption-animate="fadeInLeft" style="text-transform:none;">
 								<span class="text-rotater nocolor"  data-separator="|" data-rotate="flipInX" data-speed="3500">
-										AT the Dubai World Trade Center
+										At the Dubai World Trade Center
 								</span>
 							</h2>
 							<span class="hidden-xs" style="color:white;">A world-class venue In the heart of Dubai with more than 1 million square feet of multipurpose space.</span>
@@ -288,7 +299,7 @@
 							
 							<div class="col_one_third nobottommargin center bounceIn animated visible-lg" data-animate="bounceIn">
 								<i class="i-plain i-xlarge divcenter nobottommargin icon-time"></i>
-								<div class="counter counter-lined">June <span data-autoplay="10000" data-from="100" data-to="2018" data-refresh-interval="50" data-speed="2000">2018</span></div>
+								<div class="counter counter-lined">Oct. <span data-autoplay="10000" data-from="100" data-to="2018" data-refresh-interval="50" data-speed="2000">2018</span></div>
 								<h5 style="font-weight:bold;">Held every four years</h5>
 							</div>
 
@@ -297,7 +308,7 @@
 
 							<div class="col_one_third nobottommargin center col_last bounceIn animated visible-lg" data-animate="bounceIn" data-delay="600">
 								<i class="i-plain i-xlarge divcenter nobottommargin icon-calendar"></i>
-								<div class="counter counter-lined"><span data-from="0" data-to="3" data-refresh-interval="500" data-speed="2700">3</span>-week</div>
+								<div class="counter counter-lined"><span data-from="0" data-to="3" data-refresh-interval="500" data-speed="2700">3</span>-weeks</div>
 								<h5 style="font-weight:bold;">3-week conference</h5>
 							</div>
 							
@@ -335,7 +346,7 @@
 
 			<div class="content-wrap">
 
-				<div class="section header-stick" style=" padding-bottom: 0px; margin-top: -120px !important;  ">
+				<div class="section header-stick" style=" padding-bottom: 0px; margin-top: -120px !important; background: white;  ">
 				
 					<div class="container clearfix" >
 						<div class="row">
@@ -354,7 +365,7 @@
 							<div class="fbox-icon "  style="border-color:#1b95e0;">
 								<a href="#"><i class="icon-register3 i-alt" style="background:none !important; " ></i></a>
 							</div>
-							<a href='#' style="text-align:center" ><h3 style=" color:#3B94D9" class="underline-on-hover">Register</h3></a>
+							<a href='pp2018-register.html' style="text-align:center" ><h3 style=" color:#3B94D9" class="underline-on-hover">Register</h3></a>
 						</div>
 					</div>
 				
@@ -378,9 +389,9 @@
 					<div class="col_one_sixth nobottommargin">
 						<div class="feature-box fbox-effect fbox-center  fbox-outline fbox-dark nobottomborder fadeInLeft animated" data-animate="fadeInLeft" >
 							<div class="fbox-icon "  style="border-color:#1b95e0;">
-								<a href="#"><i class="icon-candidates2 i-alt" style="background:none !important; " ></i></a>
+								<a href="elections.html"><i class="icon-candidates2 i-alt" style="background:none !important; " ></i></a>
 							</div>
-							<a href='#' style="text-align:center" ><h3 style=" color:#3B94D9" class="underline-on-hover">Meet the Candidates</h3></a>
+							<a href='elections.html' style="text-align:center" ><h3 style=" color:#3B94D9" class="underline-on-hover">Meet the Candidates</h3></a>
 						</div>
 					</div>
 				
@@ -389,7 +400,7 @@
 							<div class="fbox-icon "  style="border-color:#1b95e0;">
 								<a href="#"><i class="icon-slot-policy2 i-alt" style="background:none !important; " ></i></a>
 							</div>
-							<a href='#' style="text-align:center" ><h3 style=" color:#3B94D9" class="underline-on-hover">Request a slot for Policy Statement</h3></a>
+							<a href='#' style="text-align:center" ><h3 style=" color:#3B94D9" class="underline-on-hover">Request a Policy Statement Slot</h3></a>
 						</div>
 					</div>
 				
@@ -402,14 +413,14 @@
 				
 			<div class="section clearfix" style="margin-top:-120px; background:white;">
 					<div class="fancy-title " style="margin-bottom:0px; padding-left:100px;">
-							<h3>Key Deadlines</h3>
+							<h3 style="    margin-bottom: 10px;">Key Deadlines</h3>
 						</div>
 								
 	
 					
    
 
-				<img src="assets/bg-deadlines.gif" width="100%"/>
+				<img src="assets/bg-deadlines-3.gif" width="100%"/>
 	
 	
 					<div class="clear"><br/></div>	
@@ -434,7 +445,7 @@
 							<h3>Latest announcements</h3>
 						</div>
 
-						<div id="posts" class="events small-thumbs">
+						<div id="posts" class="events small-thumbs" style="    margin-top: -40px;">
 						
 						
 
@@ -512,14 +523,14 @@
 					
 					<div class="col_two_fifth nobottommargin col_last">
 
-						<div class="fancy-title " style="margin-bottom:0px; top:-30px;">
-							<h3>Follow <span style="color:#0374BC;"> #Plenipot18 </span></h3>
-							<a href="https://twitter.com/intent/tweet?button_hashtag=Plenipot18" class="twitter-hashtag-button" data-show-count="false">Tweet #Plenipot18</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<div class="fancy-title " style="margin-bottom:-30px; top:-30px;">
+							<h3>Follow <span style="color:#0374BC;"> #Plenipot </span></h3>
+							<a href="https://twitter.com/intent/tweet?button_hashtag=Plenipot" class="twitter-hashtag-button" data-show-count="false">Tweet #Plenipot</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 						</div>
 						
 						
 					
-						            <a style="margin-top:-20px" class="twitter-timeline" data-tweet-limit="2" data-link-color="#3B94D9" data-border-color="#F7FFFE"   href="https://twitter.com/hashtag/SDGs" data-widget-id="900414291706355714" height="300" >Tweets sur #SDGs</a>
+						            <a style="margin-top:-40px" class="twitter-timeline" data-tweet-limit="2" data-link-color="#3B94D9" data-border-color="#F7FFFE"   href="https://twitter.com/hashtag/SDGs" data-widget-id="900414291706355714" height="300" >Tweets sur #SDGs</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				
 
@@ -539,33 +550,7 @@
 				
 				
 				
-			<div class="section clearfix" style="bottom:0px;">
-				<div class="container clearfix">
-
-						<div class="clear-bottommargin">
-							<div class="row">
-								<div class="col-md-5 bottommargin topmargin-sm">
-									<div class="heading-block rightmargin" style="">
-										<h2>Video highlights of ITU PP-14, Busan, Korea</h2>
-									</div>
-									<p class="lead rightmargin">The 2014 Plenipotentiary Conference was held in Busan, Republic of Korea from 20 October to 7 November 2014.<br/>
-									<a href="http://www.itu.int/en/plenipotentiary/2014/Pages/webcast-archives.aspx" target="blank">PP-14 Webcast Archives</a>
-									</p>
-								</div>
-								<div class="col-md-7 bottommargin">
-									<div class="fluid-width-video-wrapper" style="padding-top: 56.25%;">
-									<iframe style="border-radius:3px;" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLpoIPNlF8P2OmXXlrgPBNqYBz1zKVfTX7" frameborder="0" allowfullscreen style="box-shadow: 0 0 20px rgba(0,0,0,0.3);" id="fitvid1"></iframe>
-									
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-			</div>
-			
-					
-					
+				
 
 			</div>
 
@@ -583,7 +568,7 @@
 		
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark" style="margin-top:-250px;   ">
+		<footer id="footer" class="dark" style="margin-top:0px;   ">
 
 			<div class="container">
 
