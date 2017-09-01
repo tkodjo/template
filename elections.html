@@ -34,22 +34,34 @@
 	============================================= -->
 	<div id="wrapper" class="clearfix">
 	
+		
 	<div class="container clearfix">
 		<div class="col_full fright col_last nobottommargin" style="z-index:1000; text-align:right">
-
-					<div style="margin-right:120px" id="languagebar-div">
-					<a id="languagebar-ar" href="javascript:alert('قريبا ...');" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  class="mainlevel-nav" title="عربي">عربي</a> |
-						<a id="languagebar-es" href="javascript:alert('Página web en construcción');" style="cursor:pointer;margin-left: 10px; margin-right:10px;" title="Español">Español</a> |
-						<a id="languagebar-cn" target="" href="javascript:alert('快来了');" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  onclick="#" class="mainlevel-nav" title="中文">中文</a> |
-						<a id="languagebar-fr" href="#" title="Français" style="cursor:pointer;margin-left: 10px; margin-right:10px;" >Français</a> |
+					<style type="text/css">
+					.lang-div{
+					text-decoration: none;
+					}					
+					.lang-div a{
+						color: #84959f !important;
+					}
+					
+					</style>
+					<div style="" id="languagebar-div" class="lang-div">
+					<a id="languagebar-ar" href="javascript:alert('قريبا ...');" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  class="mainlevel-nav" title="عربي">عربي</a> 
+						<a id="languagebar-es" href="javascript:alert('Página web en construcción');" style="cursor:pointer;margin-left: 10px; margin-right:10px;" title="Español">Español</a> 
+						<a id="languagebar-cn" target="" href="javascript:alert('快来了');" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  onclick="#" class="mainlevel-nav" title="中文">中文</a> 
+						<a id="languagebar-fr" href="#" title="Français" style="cursor:pointer;margin-left: 10px; margin-right:10px;" >Français</a> 
 						<a id="languagebar-ru" style="cursor:pointer;margin-left: 10px; margin-right:10px;"  href="javascript:alert('Сайт находится в разработке');" onclick="window.location.href=&quot;&quot;;" title="Русский">Русский</a> 
                         
 					</div>
+					
+					
 
 		</div>
 		</div>
 
-			<!-- Header
+	
+	<!-- Header
 		============================================= -->
 		<header id="header" class="sticky-style-5" >
 
@@ -63,6 +75,7 @@
 				
 
 					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+			
 			<!-- Logo
 				============================================= -->
 				<div id="logo" class="" style="z-index:1000; top:-10px;">
@@ -73,6 +86,21 @@
 
 				<!-- Primary Navigation
 				============================================= -->
+					<style type="text/css">
+				#primary-menu ul li > a {
+					font-weight: bolder;
+					font-size: 13px;
+					padding-left:8px;
+					padding-right:8px;
+					
+					
+				}
+				
+				#primary-menu.style-2 > div > ul > li > a {
+				padding-bottom: 1px;
+				}
+				
+				</style>
 				<nav id="primary-menu" class="with-arrows style-2" style="  border: none;  background-color:white;  ">
 
 					<div class="container clearfix">
@@ -195,20 +223,30 @@
 					
 						
 						</ul>
-
-						<!-- Top Search
-						============================================= -->
-						<div id="top-search">
-							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-							<form action="search.html" method="get">
-								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
-							</form>
-						</div><!-- #top-search end -->
+						
+								<!-- Logo
+				============================================= -->
+				<div id="logo" class="hideonscroll" style=" top: -10px; padding-top: 20px; float: right; margin-right: 0px; height: 10px !important; width: 80px !important; display: block;">
+					<a href="pp2018-before7.html" onclick="" class="standard-logo shining" data-dark-logo="assets/logo/itu_logo2.png"  style="font-size: 25px;    text-align: center;    color: #0374BC;    font-weight: bold;" ><img class="divcenter" style="height:80px !important;" src="assets/logo/itu_logo2.png" alt="ITU Logo"></a>
+					<a href="pp2018-before7.html"  class="retina-logo" data-dark-logo="assets/logo/itu_logo2.png"><img style="height:80px !important;" class="divcenter" src="assets/logo/itu_logo2.png" alt="ITU Logo"></a>
+				</div><!-- #logo end -->
+				
+							<!-- Top Search
+							============================================= -->
+							<div id="top-search" style="float:left; ">
+								
+								<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+								<form action="search.html" id="top-search-form"  method="get">
+									<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+								</form>
+							</div><!-- #top-search end -->
 
 					</div>
 
 				</nav><!-- #primary-menu end -->
-
+				
+				
+			
 			</div>
 			
 			</div>
@@ -231,9 +269,10 @@
 
 					<nav class="one-page-menu" id="nav-menu-title-top">
 						<ul>
-							<li><a href="#" data-href="#page-menu"><div>Scroll top>></div></a></li>
+							
 							<li><a href="#" data-href="#elect-rules"><div>Rules</div></a></li>
 							<li><a href="#" data-href="#elect-candidates"><div>Candidates</div></a></li>
+							<li><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></li>
 						
 							
 						</ul>
@@ -251,6 +290,7 @@
 		
 		<!-- Content
 		============================================= -->
+		<div id="scrolltop"></div>
 		<section id="content">
 
 			<div class="content-wrap" style="padding:0px;">
@@ -268,7 +308,7 @@
 									
 					</div>
 					
-				
+					<div style="text-align:center;"><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></div>
 
 				
 					<div class="clear"><br/></div>
@@ -279,7 +319,7 @@
 					</div>
 					
 					<div class="heading-block center" data-animate="fadeInLeft">
-						<h2>​ Secretary-General</h2>
+						<h2 style="    font-size: 24px;    text-transform: none;">​ Secretary-General</h2>
 						
 					</div>
 
@@ -288,7 +328,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/team/8.jpg" style="border-radius:3px;" alt="Houlin Zhao">
+									<img src="images/team/8.jpg" style="border-radius:3px" style="border-radius:3px;" alt="Houlin Zhao">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>xxxxxxxx</h4></div>
@@ -312,16 +352,16 @@
 		<div class="clear"><br/></div>
 						
 					<div class="heading-block center">
-						<h2>​ Deputy Secretary-General</h2>
+						<h2 style="    font-size: 24px;    text-transform: none;">​ Deputy Secretary-General</h2>
 						
 					</div>
-
+						
 					<div class="row clearfix">
 
 							<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/team/8.jpg" style="border-radius:3px;" alt="Houlin Zhao">
+									<img src="images/team/8.jpg" style="border-radius:3px" style="border-radius:3px;" alt="Houlin Zhao">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>xxxxxxxx</h4></div>
@@ -344,7 +384,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" style="height:306px; border-radius:3px;" alt="Houlin Zhao">
+									<img src="assets/jake.jpg"  style="border-radius:3px" style="height:306px; border-radius:3px;" alt="Houlin Zhao">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -370,10 +410,10 @@
 						
 						
 						</div>
-
+							<div style="text-align:center;"><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></div>
 				
 					<div class="heading-block center">
-						<h2>​ Director of the Radiocommunication Bureau (BR)</h2>
+						<h2 style="    font-size: 24px;    text-transform: none;">​ Director of the Radiocommunication Bureau (BR)</h2>
 						
 					</div>
 
@@ -382,7 +422,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="John Doe">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="John Doe">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -405,7 +445,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="John Doe">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="John Doe">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -433,7 +473,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/team/8.jpg" alt="Mary Jane">
+									<img src="images/team/8.jpg" style="border-radius:3px" alt="Mary Jane">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -456,7 +496,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="Nix Maxwell">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="Nix Maxwell">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -477,11 +517,10 @@
 						</div>
 
 					</div>
-
-				
+						<div style="text-align:center;"><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></div>
 				
 					<div class="heading-block center">
-						<h2>​ ​ Director of the Telecommunication Standardization Bureau (TSB)</h2>
+						<h2 style="    font-size: 24px;    text-transform: none;">​ ​ Director of the Telecommunication Standardization Bureau (TSB)</h2>
 						
 					</div>
 
@@ -490,7 +529,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="John Doe">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="John Doe">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -513,7 +552,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="John Doe">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="John Doe">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -541,7 +580,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/team/8.jpg" alt="Mary Jane">
+									<img src="images/team/8.jpg" style="border-radius:3px" alt="Mary Jane">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -564,7 +603,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="Nix Maxwell">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="Nix Maxwell">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -585,12 +624,12 @@
 						</div>
 
 					</div>
-
+						<div style="text-align:center;"><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></div>
 				
 				
 				
 					<div class="heading-block center">
-						<h2>​ ​ ​ Director of the Telecommunication Development Bureau (BDT)</h2>
+						<h2 style="    font-size: 24px;    text-transform: none;">​ ​ ​ Director of the Telecommunication Development Bureau (BDT)</h2>
 						
 					</div>
 
@@ -599,7 +638,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="John Doe">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="John Doe">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -622,7 +661,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="John Doe">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="John Doe">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -650,7 +689,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/team/8.jpg" alt="Mary Jane">
+									<img src="images/team/8.jpg" style="border-radius:3px" alt="Mary Jane">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -673,7 +712,7 @@
 						<div class="col-md-6 bottommargin">
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="assets/jake.jpg" alt="Nix Maxwell">
+									<img src="assets/jake.jpg"  style="border-radius:3px" alt="Nix Maxwell">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>XXX</h4></div>
@@ -694,188 +733,456 @@
 						</div>
 
 					</div>
-
+						<div style="text-align:center;"><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></div>
 					
 					<div class="heading-block center">
-						<h2>​ ​ ​ ​ Radio Regulations Board (RRB) - 12 seats</h2>
+						<h2 style="    font-size: 24px;    text-transform: none;">​ ​ ​ ​ Radio Regulations Board (RRB) - 12 seats</h2>
 						
 					</div>
-					<div class="accordion accordion-bg clearfix">
-
-							<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i> Region : A: The Americas (2 seats)</div>
-							<div class="acc_content clearfix">
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+					
+						<div class="toggle toggle-bg" style="margin-bottom:20px;">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : A: The Americas (2 seats)</div>
+							<div class="togglec" >
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
 								</div>
+								
 							</div>
-
-							<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Region : B: Western Europe (2 seats) ‎</div>
-							<div class="acc_content clearfix">
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
 								</div>
-							
+								
 							</div>
-
-							<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Region : C: Eastern Europe and Northern Asia (2 seats)</div>
-							<div class="acc_content clearfix">
-							
-							<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
 								</div>
-							
-							
+								
 							</div>
-
-						<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i> Region : D: Africa  (2 seats)</div>
-							<div class="acc_content clearfix">
-							
-							<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
-								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
-								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
-								</div>
-							
-							
-							</div>
-
 						
-						<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i> Region : E: Asia and Australasia (3 seats)</div>
-							<div class="acc_content clearfix">
-							
-							<div class="col_full clearfix">
+						
+						</div>
+						</div>
 
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+							<div class="toggle toggle-bg" style="margin-bottom:20px;">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : B: Western Europe (2 seats) ‎</div>
+							<div class="togglec" >
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
 								</div>
-								<div class="col_full clearfix">
-
-						<p style="font-size: 14px; line-height: 22px;"><img width="128px" style="border-radius:3px" src="assets/jake.jpg" class="alignleft notopmargin fadeInLeftBig animated" alt="Image" title="Image" data-animate="fadeInLeftBig">Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower</p>
-						<a class="buttonlight" href="#">Read more...</a>
-
 								</div>
-							
-							
+								
 							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+						
+						
+						</div>
+						</div>
 
-					</div>
+						<div class="toggle toggle-bg" style="margin-bottom:20px;">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : C: Eastern Europe and Northern Asia (2 seats) ‎</div>
+							<div class="togglec" >
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+						
+						
+						</div>
+						</div>
+
+					<div class="toggle toggle-bg" style="margin-bottom:20px;">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : D: Africa (2 seats) ‎</div>
+							<div class="togglec" >
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+						
+						
+						</div>
+						</div>
+
+					<div class="toggle toggle-bg" style="margin-bottom:20px;">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : E: Asia and Australasia (3 seats) ‎</div>
+							<div class="togglec" >
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+							<div>
+								<div class="team team-list clearfix">
+								<div class="team-image" style="width: 150px;margin-right: 0px;">
+									<img src="assets/jake.jpg"  style="border-radius:3px; width: 128px;"  width="128px" style="border-radius:3px" alt="Nix Maxwell">
+								</div>
+								<div class="team-desc">
+									<div class="team-title"><h4>XXX</h4></div>
+									<div class="team-content">
+									<ul class="iconlist iconlist-large iconlist-color">
+										<li><i class="icon-flag2"></i> Country: XXX</li>
+										<li><i class="icon-globe"></i> Region: XXXX </li>
+										<li><i class="icon-clipboard"></i>  <a href="">CV and Vision Statement</a></li>										
+										<li><i class="icon-line-book"></i>  <a href="">Brochure</a></li>
+									</ul>
+									
+										
+									</div>
+								
+									
+								</div>
+								</div>
+								
+							</div>
+						
+						
+						</div>
+						</div>
+					<div style="text-align:center;"><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></div>
+					
 					
 					
 							
 					<div class="heading-block center">
-						<h2>​ ​ ​ ​  Council Member States - 48 seats</h2>
+						<h2 style="    font-size: 24px;    text-transform: none;">​ ​ ​ ​  Council Member States - 48 seats</h2>
 						
 					</div>
 					
-						<div class="accordion accordion-bg clearfix">
-
-							<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i> Region : A: The Americas (9 seats)</div>
-							<div class="acc_content clearfix">
+					
+					<div class="toggle toggle-bg">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : A: The Americas (9 seats)</div>
+							<div class="togglec">
 								<table>
 								<tbody><tr class=""><td class="ms-vb2">Argentina</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Barbados</td></tr><tr class=""><td class="ms-vb2">Brazil</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Canada</td></tr><tr class=""><td class="ms-vb2">Costa Rica</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Cuba</td></tr><tr class=""><td class="ms-vb2">Mexico</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Paraguay</td></tr><tr class=""><td class="ms-vb2">United States of America</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Venezuela (Bolivarian Republic of)</td></tr></tbody>
 								</table>
-								
-								
-								</div>
+							</div>
+						</div>
 
-							<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Region : B: Western Europe (8 seats) ‎</div>
-							<div class="acc_content clearfix">
-							<table>
+						<div class="toggle toggle-bg">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : B: Western Europe (8 seats) ‎</div>
+							<div class="togglec">
+								<table>
 								<tbody><tr class=""><td class="ms-vb2">France</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Germany</td></tr><tr class=""><td class="ms-vb2">Greece</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Italy</td></tr><tr class=""><td class="ms-vb2">Lithuania</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Spain</td></tr><tr class=""><td class="ms-vb2">Switzerland</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Turkey</td></tr></tbody>
 							</table>
 							</div>
+						</div>
 
-							<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i>Region : C: Eastern Europe and Northern Asia (5 seats)</div>
-							<div class="acc_content clearfix">
+						<div class="toggle toggle-bg">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : C: Eastern Europe and Northern Asia (5 seats)</div>
+							<div class="togglec">
 							<table>
-						<tbody><tr class=""><td class="ms-vb2">Azerbaijan</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Bulgaria</td></tr><tr class=""><td class="ms-vb2">Kyrgyzstan</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Poland</td></tr><tr class=""><td class="ms-vb2">Romania</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Russian Federation</td></tr><tr class=""><td class="ms-vb2">The Former Yugoslav Republic of Macedonia</td></tr></tbody>
-						</table>
+								<tbody><tr class=""><td class="ms-vb2">Azerbaijan</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Bulgaria</td></tr><tr class=""><td class="ms-vb2">Kyrgyzstan</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Poland</td></tr><tr class=""><td class="ms-vb2">Romania</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Russian Federation</td></tr><tr class=""><td class="ms-vb2">The Former Yugoslav Republic of Macedonia</td></tr></tbody>
+								</table>
 							</div>
-
-						<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i> Region : D: Africa  (13 seats)</div>
-							<div class="acc_content clearfix">
+						</div>
+						
+						<div class="toggle toggle-bg">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : D: Africa (13 seats)</div>
+							<div class="togglec">
 							<table>
 							<tbody><tr class="ms-alternatingstrong"><td class="ms-vb2">Algeria</td></tr><tr class=""><td class="ms-vb2">Burkina Faso</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Cameroon</td></tr><tr class=""><td class="ms-vb2">Côte d'Ivoire</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Egypt</td></tr><tr class=""><td class="ms-vb2">Ghana</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Kenya</td></tr><tr class=""><td class="ms-vb2">Mali</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Morocco</td></tr><tr class=""><td class="ms-vb2">Nigeria</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Rwanda</td></tr><tr class=""><td class="ms-vb2">Senegal</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">South Africa</td></tr><tr class=""><td class="ms-vb2">Tanzania</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Tunisia</td></tr><tr class=""><td class="ms-vb2">Uganda</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Zambia</td></tr></tbody>
 							</table>
 						
+							</div>
+						</div>
+						
+						<div class="toggle toggle-bg">
+							<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Region : E: Asia and Australasia (13 seats)</div>
+							<div class="togglec">
+								<table>
+								<tbody><tr class=""><td class="ms-vb2">Australia</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Bahrain</td></tr><tr class=""><td class="ms-vb2">Bangladesh</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">China</td></tr><tr class=""><td class="ms-vb2">India</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Indonesia</td></tr><tr class=""><td class="ms-vb2">Iran (Islamic Republic of)</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Japan</td></tr><tr class=""><td class="ms-vb2">Korea (Rep. of)</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Kuwait</td></tr><tr class=""><td class="ms-vb2">Lebanon</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Malaysia</td></tr><tr class=""><td class="ms-vb2">Pakistan</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Philippines</td></tr><tr class=""><td class="ms-vb2">Saudi Arabia</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Sri Lanka</td></tr><tr class=""><td class="ms-vb2">Thailand</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">United Arab Emirates</td></tr></tbody>
+								</table>
 						
 							</div>
+						</div>
 
-						
-						<div class="acctitle"><i class="acc-closed icon-ok-circle"></i><i class="acc-open icon-remove-circle"></i> Region : E: Asia and Australasia (13 seats)</div>
-							<div class="acc_content clearfix">
-						<table>
-							<tbody><tr class=""><td class="ms-vb2">Australia</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Bahrain</td></tr><tr class=""><td class="ms-vb2">Bangladesh</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">China</td></tr><tr class=""><td class="ms-vb2">India</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Indonesia</td></tr><tr class=""><td class="ms-vb2">Iran (Islamic Republic of)</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Japan</td></tr><tr class=""><td class="ms-vb2">Korea (Rep. of)</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Kuwait</td></tr><tr class=""><td class="ms-vb2">Lebanon</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Malaysia</td></tr><tr class=""><td class="ms-vb2">Pakistan</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Philippines</td></tr><tr class=""><td class="ms-vb2">Saudi Arabia</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">Sri Lanka</td></tr><tr class=""><td class="ms-vb2">Thailand</td></tr><tr class="ms-alternatingstrong"><td class="ms-vb2">United Arab Emirates</td></tr></tbody>
-							</table>
-							</div>
-
-					</div>
-					
+						<div style="text-align:center;"><a href="#" data-href="#scrolltop" class="icon-angle-up showonscroll" style=""></a></div>
 					
 						
 					
@@ -888,9 +1195,10 @@
 			</div>
 
 		</section><!-- #content end -->
-<!-- Footer
+
+		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
+		<footer id="footer" class="dark" style="margin-top:0px;   ">
 
 			<div class="container">
 
@@ -930,12 +1238,13 @@
 								<h4>Useful links</h4>
 
 								<ul>
+									<li><a href="#">Basic texts of the Union</a></li>
 									<li><a href="#">ITU Council</a></li>
 									<li><a href="#">WSIS</a></li>
-									<li><a href="#">Telecomm World</a></li>
+									<li><a href="#">Telecom World</a></li>
 									<li><a href="#">Library and Archives</a></li>
 									<li><a href="#">Statistics and Analysis</a></li>
-									<li><a href="#">Webmail</a></li>
+									<li><a href="#">Contact us</a></li>
 									
 									
 								</ul>
@@ -956,7 +1265,6 @@
 									<li><a href="#">ITU-R</a></li>
 									<li><a href="#">ITU-T</a></li>
 									<li><a href="#">General Secretariat</a></li>
-									<li><a href="#">Others</a></li>
 								</ul>
 
 							</div>
@@ -977,7 +1285,7 @@
 						</div>
 
 						<div class="widget subscribe-widget clearfix">
-							<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+							<h5><strong>Subscribe</strong> to our Newsletter to get important News:</h5>
 							<div class="widget-subscribe-form-result"></div>
 							<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
 								<div class="input-group divcenter">
@@ -991,24 +1299,46 @@
 						</div>
 
 						<div class="widget clearfix" style="margin-bottom: -20px;">
-
+							<h5><strong>Follow us on Social media</strong> </h5>
 							<div class="row">
+							
+								<div class="col-md-full clearfix bottommargin-sm">
+									<div class="fleft clearfix">
+							<a href="#" class="social-icon si-small si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
 
-								<div class="col-md-6 clearfix bottommargin-sm">
-									<a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
-								</div>
-								<div class="col-md-6 clearfix">
-									<a href="#" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">
-										<i class="icon-rss"></i>
-										<i class="icon-rss"></i>
-									</a>
-									<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
-								</div>
+							<a href="#" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
 
+							<a href="#" class="social-icon si-small si-borderless si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+								<a href="#" class="social-icon si-small si-borderless si-youtube">
+								<i class="icon-youtube"></i>
+								<i class="icon-youtube"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-flickr">
+								<i class="icon-flickr"></i>
+								<i class="icon-flickr"></i>
+							</a>
+
+							
+						</div>
+
+					
+								</div>
+							
 							</div>
 
 						</div>
@@ -1031,48 +1361,6 @@
 					</div>
 
 					<div class="col_half col_last tright">
-						<div class="fright clearfix">
-							<a href="#" class="social-icon si-small si-borderless si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-gplus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-pinterest">
-								<i class="icon-pinterest"></i>
-								<i class="icon-pinterest"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-vimeo">
-								<i class="icon-vimeo"></i>
-								<i class="icon-vimeo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-github">
-								<i class="icon-github"></i>
-								<i class="icon-github"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-yahoo">
-								<i class="icon-yahoo"></i>
-								<i class="icon-yahoo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-linkedin">
-								<i class="icon-linkedin"></i>
-								<i class="icon-linkedin"></i>
-							</a>
-						</div>
-
 						<div class="clear"></div>
 
 						<i class="icon-envelope2"></i> itumail[at]itu.int <span class="middot">&middot;</span> <i class="icon-headphones"></i> +41 22 730 5111 <span class="middot">&middot;</span>
@@ -1100,6 +1388,27 @@
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
 	
+	<script type="text/javascript">
+		$('.showonscroll').hide();
+		//hide and show itu menu on scroll
+		$(window).scroll(function() {
+		
+
+			if ($(this).scrollTop()>0)
+			 {
+				$('.hideonscroll').hide();
+				$('.showonscroll').fadeIn();
+			 }
+			else
+			 {
+			  $('.hideonscroll').fadeIn();
+			  $('.showonscroll').hide();
+			 }
+		 });
+
+
+	
+	</script>
 	
 
 </body></html>

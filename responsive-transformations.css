@@ -14,15 +14,16 @@
   padding-top: 30px;
   position: relative;
   flex: 1;
-  transition: all 0.4s ease-in-out;
+  cursor:pointer;
+  /*transition: all 0.4s ease-in-out;*/
 }
 #timeline li:hover {
-  padding-bottom: 80px;
-  flex: 2;
+  /*padding-bottom: 80px;
+  flex: 2;*/
 }
 #timeline li:hover label {
-  opacity: 1;
-  transform: translateY(10px);
+  /*opacity: 1;
+  transform: translateY(10px);*/
 }
 
 label {
@@ -69,7 +70,7 @@ label {
     right: 0;
     z-index: 100;
     background-color: rgba(12, 122, 191, 0.6);
-    animation: switching_back 0.8s;
+    /*animation: switching_back 0.8s;*/
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	display:none;
    
@@ -88,9 +89,9 @@ label {
 }
 
 .radio:checked + label {
-  opacity: 1;
+  /*opacity: 1;
   transform: translateY(10px);
-  transition: opacity 0.4s ease-in-out 0.25s, transform 0.3s ease-in-out 0.25s;
+  transition: opacity 0.4s ease-in-out 0.25s, transform 0.3s ease-in-out 0.25s;*/
 }
 .radio:checked ~ .circle {
   background: #DC143C;

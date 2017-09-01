@@ -2215,7 +2215,8 @@ body.top-search-open #top-account { opacity: 0; }
 
 #page-menu nav {
 	position: relative;
-	float: right;
+	float: left;
+	margin-left:20px;
 }
 
 #page-menu nav ul {
@@ -2233,10 +2234,13 @@ body.top-search-open #top-account { opacity: 0; }
 	display: block;
 	height: 28px;
 	line-height: 28px;
-	margin: 8px 4px;
-	padding: 0 14px;
+	/*margin: 8px 4px;
+	padding: 0 14px;*/
+	margin: 8px 0px;
+    padding: 0 10px;
 	color: #FFF;
-	font-size: 14px;
+	/*font-size: 14px;*/
+	font-size: 12px;
 	border-radius: 14px;
 }
 
@@ -7529,12 +7533,17 @@ body:not(.device-touch) .button.button-full strong {
 }
 
 .feature-box h3 {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 0;
 	color: #333;
+}
+
+.feature-box h3:hover {
+	font-size: 15px;
+	
 }
 
 .feature-box p {
